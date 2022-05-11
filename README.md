@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# The Cheer Up App
+
+This app was made using the following APIs:
+
+- [The Cat API](https://thecatapi.com/)
+- [Dog CEO's Dog API](https://dog.ceo/dog-api/)
+- [Jokes One API](https://api.jokes.one/)
+
+It's meant to brighten your day by using React, react-router-dom, and Material UI.
+
+It's deployed on Heroku.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
