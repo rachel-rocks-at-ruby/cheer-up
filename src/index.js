@@ -15,8 +15,8 @@ root.render(
   <Router>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/dog" element={<Animal />} /> 
-      <Route path="/cat" element={<Animal />} /> 
+      <Route path="/dog" element={<Animal type="dog" />} /> 
+      <Route path="/cat" element={<Animal type="cat" />} /> 
       <Route path="/other" element={<Other />} />
     </Routes>
   </Router>
