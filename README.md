@@ -8,6 +8,8 @@ This app was made using the following APIs:
 
 It's meant to brighten your day by using React, react-router-dom, and Material UI.
 
+It uses Semantic HML, is responsive, and handles accessibility concerns.
+
 It's deployed on Heroku at [https://quiet-sierra-19733.herokuapp.com/](https://quiet-sierra-19733.herokuapp.com/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

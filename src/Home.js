@@ -8,13 +8,13 @@ import Typography from '@mui/material/Typography';
 function Home() {
     return (
         <div className="App">
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ maxWidth: 500 }}>
                 <CardContent>
                     <Typography color="textPrimary" gutterBottom variant="h2" align="center">
                         The Cheer Up App
                     </Typography>
                     <Typography color="textPrimary" gutterBottom variant="body1" align="center">
-                        <span className="material-icons md-18 sunny">sunny</span> Let one of these options brighten your day. <span className="material-icons md-18 sunny">sunny</span>
+                        <span className="material-icons sunny">sunny</span> Let one of these options brighten your day. <span className="material-icons sunny">sunny</span>
                     </Typography>
                     <Typography color="textPrimary" gutterBottom variant="body1" align="center">Which do you prefer?</Typography>
                 </CardContent>
