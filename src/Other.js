@@ -1,5 +1,10 @@
 import { Link as RouterLink } from 'react-router-dom';
-import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@material-ui/core';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 import { useEffect, useState } from 'react';
 import horse from './assets/horse.jpg';
 
@@ -11,8 +16,6 @@ function Other() {
             .then((res) => res.json())
             .then((data) => setJoke(data.contents.jokes[0].joke));
     }
-
-    console.log({joke})
 
     useEffect(() => {
         refreshJoke();

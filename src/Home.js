@@ -1,6 +1,7 @@
 import { Link as RouterLink } from 'react-router-dom';
 import './Home.css';
-import { Button, Typography } from '@material-ui/core';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
 function Home() {
     return (

@@ -1,6 +1,9 @@
 import { Link as RouterLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Button, Card, CardActions, CardMedia } from '@material-ui/core';
+import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardMedia from '@mui/material/CardMedia';
 
 function Animal() {
     const [animalImage, setAnimalImage] = useState('');
@@ -29,7 +32,7 @@ function Animal() {
     }, []);
 
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 500 }}>
             <CardMedia
                 component="img"
                 height="500"
