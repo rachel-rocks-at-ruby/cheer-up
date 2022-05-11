@@ -4,12 +4,13 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardMedia from '@mui/material/CardMedia';
+import './Content.css';
 
 function Animal() {
     const [animalImage, setAnimalImage] = useState('');
     const pathame = window.location.pathname;
     const animal = pathame === '/cat' ? 'cat' : 'dog';
-    
+
 
     const refreshCat = () => {
         fetch("https://api.thecatapi.com/v1/images/search")
@@ -32,18 +33,20 @@ function Animal() {
     }, []);
 
     return (
-        <Card sx={{ maxWidth: 500 }}>
-            <CardMedia
-                component="img"
-                height="500"
-                image={animalImage}
-                alt={`a random ${animal}`}
-            />
-            <CardActions>
-                <Button size="small" onClick={() => refreshAnimal()}>Get a new {animal}</Button>
-                <Button size="small" component={RouterLink} to="/">Go home</Button>
-            </CardActions>
-        </Card>
+        <div className="content-container">
+            <Card sx={{ maxWidth: 500 }}>
+                <CardMedia
+                    component="img"
+                    height="500"
+                    image={animalImage}
+                    alt={`a random ${animal}`}
+                />
+                <CardActions>
+                    <Button size="small" onClick={() => refreshAnimal()}>Get a new {animal}</Button>
+                    <Button size="small" component={RouterLink} to="/">Go home</Button>
+                </CardActions>
+            </Card>
+        </div>
     );
 }
 
