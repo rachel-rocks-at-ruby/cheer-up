@@ -10,12 +10,12 @@ import horse from './assets/horse.jpg';
 import './Content.css';
 
 function Other() {
-    const [joke, setJoke] = useState({});
+    const [joke, setJoke] = useState({ text: '' });
 
     const refreshJoke = () => {
         fetch("https://api.jokes.one/jod")
             .then((res) => res.json())
-            .then((data) => setJoke(data.contents.jokes[0].joke));
+            .then((data) => setJoke(data?.contents.jokes[0].joke || { text: 'No joke today '} ));
     }
 
     useEffect(() => {
