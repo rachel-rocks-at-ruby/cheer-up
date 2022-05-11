@@ -9,6 +9,7 @@ import Home from './Home';
 import Animal from './Animal';
 import Other from './Other';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
